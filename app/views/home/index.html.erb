@@ -1,6 +1,6 @@
 <div class="index_wrap">
     <h1>風除室のガラス寸法自動計算</h1>
-    <%= form_tag(controller: "home" ,action:"calculation") do %>
+    <%= form_tag(controller: "home" ,action:"index") do %>
         <div class="form-group">
             <%= label_tag("kind","風除室のドアの種類") %>
             <%= select_tag('kind',options_for_select(["袖付き2枚引き","引き戸","ドア"])) %>
@@ -21,5 +21,14 @@
             <%= submit_tag("計算") %>
         </div>
     <% end %>
-
+    <div class="size">
+        <div class="gw">
+            <p>ガラスW寸法</p>
+            <p><%= @gw %></p>
+        </div>
+        <div class="gh">
+            <p>ガラスH寸法</p>
+            <p><%= @gh %></p>
+        </div>
+    </div>
 </div>
