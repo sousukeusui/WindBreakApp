@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  g_width: 1
+  g_height: 1
+
+two:
+  g_width: 1
+  g_height: 1

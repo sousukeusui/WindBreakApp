@@ -1,0 +1,2 @@
+class SlidingDoor < ApplicationRecord
+end

@@ -1,0 +1,27 @@
+<div class="index_wrap">
+    <h1>風除室のガラス寸法自動計算</h1>
+    <%= form_tag(controller: "home" ,action:"calculation") do %>
+        <div class="form-group">
+            <%= label_tag("kind","風除室のドアの種類") %>
+            <%= select_tag('kind',options_for_select(["袖付き2枚引き","引き戸","ドア"])) %>
+        </div>
+        <div class="form-group">
+            <p>実際の寸法</p>
+            <%= label_tag("width","W寸法") %>
+            <%= text_field_tag("width","",{placeholder: "内々寸法"}) %>
+            <%= label_tag("mh","MH寸法") %>
+            <%= text_field_tag("mh","",{placeholder: "無目の高さ"}) %>
+        </div>
+        <div class="form-group">
+            <p>発注されてる規格</p>
+            <%= label_tag("standard_w","規格W") %>
+            <%= text_field_tag("standard_w","",{placeholder: "例:20,22,24"}) %>
+            <%= label_tag("standard_mh","規格MH") %>
+            <%= text_field_tag("standard_mh","",{placeholder: "例:20,22,24"}) %>
+        </div>
+        <div class="submit">
+            <%= submit_tag("計算") %>
+        </div>
+    <% end %>
+
+</div>
