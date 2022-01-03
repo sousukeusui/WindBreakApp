@@ -14,10 +14,8 @@
         </div>
         <div class="form-group">
             <p>発注されてる規格</p>
-            <%= label_tag("standard_w","規格W") %>
-            <%= text_field_tag("standard_w","",{placeholder: "例:20,22,24"}) %>
-            <%= label_tag("standard_mh","規格MH") %>
-            <%= text_field_tag("standard_mh","",{placeholder: "例:20,22,24"}) %>
+            <%= label_tag("standard","規格寸法") %>
+            <%= text_field_tag("standard","",{placeholder: "例:1822"}) %>
         </div>
         <div class="submit">
             <%= submit_tag("計算") %>
